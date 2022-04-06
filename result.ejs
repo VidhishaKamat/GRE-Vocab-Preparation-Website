@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRE Vocabulary | Meaning</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="/css/result.css" >
+
+    <!-- JavaScript -->
+    <script>
+    
+        function goBack(){
+            window.history.back();
+        }
+    
+    </script>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="word">
+            <p><b class="word-searched" style="font-size: 10vh;"><%= word %> </b><b style="font-size: 3.5vh;"><%= pronunciation %></b></p>
+        </div>
+        <div class="synonyms">
+            <p>Read synonyms for <a href="<%= synonymLink %>"><b><%= word %>.</b></a></p>
+        </div>
+        <hr>
+        <div class="meaning">
+            <p>~ <%= meaningOne %></p>
+            <p>~ <%= meaningTwo %></p>
+            <p>~ <%= meaningThree %></p>
+        </div>
+    </div>
+    <div class="back-btn">
+        <input type="button" value="Back" onclick="goBack()"><a href="/"></a></input>
+    </div>
+
+    <footer>
+        &copy; Lasagna.com
+    </footer>
+
+</body>
+</html>
